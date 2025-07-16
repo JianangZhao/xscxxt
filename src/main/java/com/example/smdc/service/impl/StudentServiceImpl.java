@@ -35,4 +35,24 @@ public class StudentServiceImpl implements StudentService {
         
         return student;
     }
+
+    @Override
+    public Student createStudent(Student student) {
+        // 参数验证
+        if (student == null) {
+            log.error("学生信息不能为空");
+            throw new IllegalArgumentException("学生信息不能为空");
+        }
+        if (!StringUtils.hasText(student.getStudentId())) {
+            log.error("学号不能为空");
+            throw new IllegalArgumentException("学号不能为空");
+        }
+        if (!StringUtils.hasText(student.getName())) {
+            log.error("姓名不能为空");
+            throw new IllegalArgumentException("姓名不能为空");
+        }
+
+        log.info("创建新学生信息: {}", student);
+        return studentRepository.save(student);
+    }
 } 

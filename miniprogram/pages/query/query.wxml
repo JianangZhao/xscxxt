@@ -1,0 +1,57 @@
+<!--pages/query/query.wxml-->
+<view class="container">
+  <form bindsubmit="submitForm">
+    <view class="search-box">
+      <input 
+        class="search-input" 
+        name="studentId" 
+        type="text" 
+        placeholder="请输入学号" 
+        maxlength="20"
+      />
+      <button 
+        class="search-btn" 
+        type="primary" 
+        formType="submit" 
+        loading="{{loading}}"
+      >查询</button>
+    </view>
+  </form>
+
+  <view class="result-box" wx:if="{{showResult}}">
+    <view class="result-item">
+      <text class="label">学号：</text>
+      <text class="value">{{studentInfo.studentId}}</text>
+    </view>
+    <view class="result-item">
+      <text class="label">姓名：</text>
+      <text class="value">{{studentInfo.name}}</text>
+    </view>
+    <view class="result-item">
+      <text class="label">性别：</text>
+      <text class="value">{{studentInfo.gender}}</text>
+    </view>
+    <view class="result-item">
+      <text class="label">专业：</text>
+      <text class="value">{{studentInfo.major}}</text>
+    </view>
+    <view class="result-item">
+      <text class="label">班级：</text>
+      <text class="value">{{studentInfo.className}}</text>
+    </view>
+    <view class="result-item">
+      <text class="label">电话：</text>
+      <text class="value">{{studentInfo.phone}}</text>
+    </view>
+    <view class="result-item">
+      <text class="label">邮箱：</text>
+      <text class="value">{{studentInfo.email}}</text>
+    </view>
+
+    <button 
+      class="reset-btn" 
+      type="default" 
+      bindtap="resetForm"
+    >重新查询</button>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+规则名称: 终端规则
+描述: 
+终端使用规则和最佳实践
+
+终端配置
+- 使用PowerShell作为Windows环境下的默认终端
+- 所有命令行操作和脚本执行都应该通过PowerShell完成
+- 利用PowerShell的高级脚本功能和Windows集成优势
+
+PowerShell最佳实践
+- 使用PowerShell命令而不是传统的cmd命令
+- 利用PowerShell的模块化功能
+- 使用PowerShell的内置帮助系统获取命令帮助
+
+脚本执行
+- 所有脚本必须遵循PowerShell的执行策略
+- 使用适当的权限级别运行脚本
+- 保持脚本的可维护性和可读性
+
+安全考虑
+- 遵循PowerShell安全最佳实践
+- 谨慎处理脚本执行权限
+- 定期更新PowerShell到最新版本
+
+文档规范
+- 为复杂的PowerShell命令添加注释
+- 维护常用PowerShell命令的文档
+- 记录特定项目相关的PowerShell配置

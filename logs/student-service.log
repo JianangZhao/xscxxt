@@ -1,32 +1,83 @@
-2025-07-15 22:35:12.235 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
-2025-07-15 22:35:12.242 [main] INFO  com.example.smdc.SmdcApplication - Starting SmdcApplication using Java 17.0.7 on zhao with PID 15596 (E:\projects\smdc\target\classes started by zhaojianang in E:\projects\smdc)
-2025-07-15 22:35:12.243 [main] DEBUG com.example.smdc.SmdcApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
-2025-07-15 22:35:12.243 [main] INFO  com.example.smdc.SmdcApplication - The following 1 profile is active: "dev"
-2025-07-15 22:35:12.883 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-07-15 22:35:12.937 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interfaces.
-2025-07-15 22:35:13.419 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
-2025-07-15 22:35:13.429 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
-2025-07-15 22:35:13.430 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-07-15 22:35:13.430 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
-2025-07-15 22:35:13.516 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-07-15 22:35:13.516 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1240 ms
-2025-07-15 22:35:13.638 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-07-15 22:35:13.691 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
-2025-07-15 22:35:13.833 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2025-07-15 22:35:13.929 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-07-15 22:35:14.168 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-07-15 22:35:14.183 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2025-07-15 22:35:14.662 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2025-07-15 22:35:14.671 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-07-15 22:35:15.008 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-07-15 22:35:15.122 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-2025-07-15 22:35:15.639 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
-2025-07-15 22:35:15.657 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
-2025-07-15 22:35:15.664 [main] INFO  com.example.smdc.SmdcApplication - Started SmdcApplication in 3.809 seconds (JVM running for 4.1)
-2025-07-15 22:44:30.180 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-07-15 22:44:30.180 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-07-15 22:44:30.181 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2025-07-15 22:44:30.211 [http-nio-8081-exec-1] INFO  c.e.s.s.impl.StudentServiceImpl - 查询学号为 2021001 的学生信息
-2025-07-15 22:44:30.301 [http-nio-8081-exec-1] DEBUG c.e.s.s.impl.StudentServiceImpl - 查询到学生信息: Student(studentId=2021001, name=张三, gender=男, major=计算机科学, className=计算机2班, phone=13800138001, email=zhangsan@example.com)
-2025-07-15 22:45:15.429 [http-nio-8081-exec-4] INFO  c.e.s.s.impl.StudentServiceImpl - 查询学号为 2021004 的学生信息
-2025-07-15 22:45:15.435 [http-nio-8081-exec-4] DEBUG c.e.s.s.impl.StudentServiceImpl - 查询到学生信息: Student(studentId=2021004, name=赵六, gender=女, major=数据科学, className=数据1班, phone=13800138004, email=zhaoliu@example.com)
+2025-07-16 21:50:36.501 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2025-07-16 21:50:36.508 [main] INFO  com.example.smdc.SmdcApplication - Starting SmdcApplication using Java 17.0.7 on zhao with PID 27500 (E:\projects\smdc\target\classes started by zhaojianang in E:\projects\smdc)
+2025-07-16 21:50:36.508 [main] DEBUG com.example.smdc.SmdcApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2025-07-16 21:50:36.509 [main] INFO  com.example.smdc.SmdcApplication - The following 1 profile is active: "dev"
+2025-07-16 21:50:37.144 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-16 21:50:37.194 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
+2025-07-16 21:50:37.715 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-07-16 21:50:37.723 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-07-16 21:50:37.723 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 21:50:37.724 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-07-16 21:50:37.813 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 21:50:37.814 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1270 ms
+2025-07-16 21:50:37.957 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-16 21:50:38.010 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-07-16 21:50:38.179 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-07-16 21:50:38.273 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-16 21:50:38.554 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-16 21:50:38.568 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-07-16 21:50:39.028 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-07-16 21:50:39.036 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-16 21:50:39.414 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-16 21:50:39.546 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-07-16 21:50:40.065 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-07-16 21:50:40.084 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-07-16 21:50:40.092 [main] INFO  com.example.smdc.SmdcApplication - Started SmdcApplication in 3.967 seconds (JVM running for 4.283)
+2025-07-16 21:51:41.134 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 21:51:41.134 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 21:51:41.135 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-16 21:51:41.161 [http-nio-8081-exec-1] INFO  c.e.s.s.impl.StudentServiceImpl - 查询学号为 2021004 的学生信息
+2025-07-16 21:51:41.249 [http-nio-8081-exec-1] DEBUG c.e.s.s.impl.StudentServiceImpl - 查询到学生信息: Student(studentId=2021004, name=赵六, gender=女, major=数据科学, className=数据1班, phone=13800138004, email=zhaoliu@example.com)
+2025-07-16 21:57:04.842 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-16 21:57:04.842 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-16 21:57:04.850 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-07-16 21:57:10.262 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2025-07-16 21:57:10.266 [main] INFO  com.example.smdc.SmdcApplication - Starting SmdcApplication using Java 17.0.7 on zhao with PID 1872 (E:\projects\smdc\target\classes started by zhaojianang in E:\projects\smdc)
+2025-07-16 21:57:10.266 [main] DEBUG com.example.smdc.SmdcApplication - Running with Spring Boot v2.7.0, Spring v5.3.20
+2025-07-16 21:57:10.266 [main] INFO  com.example.smdc.SmdcApplication - The following 1 profile is active: "dev"
+2025-07-16 21:57:10.860 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-16 21:57:10.896 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interfaces.
+2025-07-16 21:57:11.375 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-07-16 21:57:11.387 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-07-16 21:57:11.387 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-16 21:57:11.387 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-07-16 21:57:11.459 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-16 21:57:11.459 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1163 ms
+2025-07-16 21:57:11.571 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-16 21:57:11.619 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.9.Final
+2025-07-16 21:57:11.737 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2025-07-16 21:57:11.807 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-16 21:57:12.066 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-16 21:57:12.080 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2025-07-16 21:57:12.504 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2025-07-16 21:57:12.509 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-16 21:57:12.855 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-07-16 21:57:12.973 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2025-07-16 21:57:13.600 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-07-16 21:57:13.620 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-07-16 21:57:13.627 [main] INFO  com.example.smdc.SmdcApplication - Started SmdcApplication in 3.685 seconds (JVM running for 3.951)
+2025-07-16 22:02:52.163 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-16 22:02:52.164 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-16 22:02:52.165 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-16 22:02:52.224 [http-nio-8081-exec-1] INFO  c.e.s.s.impl.StudentServiceImpl - 查询学号为 2021007 的学生信息
+2025-07-16 22:02:52.287 [http-nio-8081-exec-1] WARN  c.e.s.s.impl.StudentServiceImpl - 未找到学号为 2021007 的学生信息
+2025-07-16 22:02:52.287 [http-nio-8081-exec-1] INFO  c.e.s.s.impl.StudentServiceImpl - 创建新学生信息: Student(studentId=2021007, name=钱三, gender=男, major=通信工程, className=通信一班, phone=13800138006, email=qiansan@example.com)
+2025-07-16 22:02:59.741 [http-nio-8081-exec-2] INFO  c.e.s.s.impl.StudentServiceImpl - 查询学号为 2021007 的学生信息
+2025-07-16 22:02:59.750 [http-nio-8081-exec-2] DEBUG c.e.s.s.impl.StudentServiceImpl - 查询到学生信息: Student(studentId=2021007, name=钱三, gender=男, major=通信工程, className=通信一班, phone=13800138006, email=qiansan@example.com)
+2025-07-16 22:07:38.102 [http-nio-8081-exec-4] INFO  c.e.s.s.impl.StudentServiceImpl - 查询学号为 2021008 的学生信息
+2025-07-16 22:07:38.106 [http-nio-8081-exec-4] WARN  c.e.s.s.impl.StudentServiceImpl - 未找到学号为 2021008 的学生信息
+2025-07-16 22:07:38.106 [http-nio-8081-exec-4] INFO  c.e.s.s.impl.StudentServiceImpl - 创建新学生信息: Student(studentId=2021008, name=xiaozhang, gender=女, major=测绘专业, className=测绘一级, phone=13800138007, email=zhang@example.com)
+2025-07-16 22:09:01.261 [http-nio-8081-exec-6] INFO  c.e.s.s.impl.StudentServiceImpl - 查询学号为 2021008 的学生信息
+2025-07-16 22:09:01.266 [http-nio-8081-exec-6] DEBUG c.e.s.s.impl.StudentServiceImpl - 查询到学生信息: Student(studentId=2021008, name=xiaozhang, gender=女, major=测绘专业, className=测绘一级, phone=13800138007, email=zhang@example.com)
+2025-07-16 22:09:22.957 [http-nio-8081-exec-9] INFO  c.e.s.s.impl.StudentServiceImpl - 查询学号为 2021008 的学生信息
+2025-07-16 22:09:22.960 [http-nio-8081-exec-9] DEBUG c.e.s.s.impl.StudentServiceImpl - 查询到学生信息: Student(studentId=2021008, name=xiaozhang, gender=女, major=测绘专业, className=测绘一级, phone=13800138007, email=zhang@example.com)
+2025-07-16 22:09:28.053 [http-nio-8081-exec-8] INFO  c.e.s.s.impl.StudentServiceImpl - 查询学号为 2021009 的学生信息
+2025-07-16 22:09:28.055 [http-nio-8081-exec-8] WARN  c.e.s.s.impl.StudentServiceImpl - 未找到学号为 2021009 的学生信息
+2025-07-16 22:09:28.055 [http-nio-8081-exec-8] INFO  c.e.s.s.impl.StudentServiceImpl - 创建新学生信息: Student(studentId=2021009, name=小张, gender=女, major=测绘专业, className=测绘一级, phone=13800138007, email=zhang@example.com)
+2025-07-16 22:09:35.933 [http-nio-8081-exec-7] INFO  c.e.s.s.impl.StudentServiceImpl - 查询学号为 2021009 的学生信息
+2025-07-16 22:09:35.941 [http-nio-8081-exec-7] DEBUG c.e.s.s.impl.StudentServiceImpl - 查询到学生信息: Student(studentId=2021009, name=小张, gender=女, major=测绘专业, className=测绘一级, phone=13800138007, email=zhang@example.com)
+2025-07-16 22:12:03.489 [http-nio-8081-exec-1] INFO  c.e.s.s.impl.StudentServiceImpl - 查询学号为 2021001 的学生信息
+2025-07-16 22:12:03.493 [http-nio-8081-exec-1] WARN  c.e.s.s.impl.StudentServiceImpl - 未找到学号为 2021001 的学生信息
+2025-07-16 22:12:03.494 [http-nio-8081-exec-1] INFO  c.e.s.s.impl.StudentServiceImpl - 创建新学生信息: Student(studentId=2021001, name=张三, gender=男, major=计算机科学, className=计算机2班, phone=13800138001, email=zhangsan@example.com)
+2025-07-16 22:12:11.759 [http-nio-8081-exec-2] INFO  c.e.s.s.impl.StudentServiceImpl - 查询学号为 2021001 的学生信息
+2025-07-16 22:12:11.765 [http-nio-8081-exec-2] DEBUG c.e.s.s.impl.StudentServiceImpl - 查询到学生信息: Student(studentId=2021001, name=张三, gender=男, major=计算机科学, className=计算机2班, phone=13800138001, email=zhangsan@example.com)

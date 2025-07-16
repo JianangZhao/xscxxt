@@ -31,4 +31,16 @@ public class StudentController {
         }
         return Result.success(student);
     }
+
+    @Operation(summary = "添加学生信息", description = "添加新的学生信息")
+    @PostMapping
+    public Result<Student> createStudent(@RequestBody Student student) {
+        // 检查学号是否已存在
+        if (studentService.getStudentByStudentId(student.getStudentId()) != null) {
+            return Result.error(400, "该学号已存在");
+        }
+        
+        Student savedStudent = studentService.createStudent(student);
+        return Result.success(savedStudent);
+    }
 } 

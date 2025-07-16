@@ -1,12 +1,28 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/query/query",
+    "pages/add/add"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#3A7FED",
-    "navigationBarTitleText": "学生信息查询",
+    "navigationBarTitleText": "学生信息系统",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#3A7FED",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/query/query",
+        "text": "查询"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "添加"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
